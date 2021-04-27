@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CAARRINHO DE COMPRAS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+		<script src="go.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav id="menu">
+                <ul>
+                    <li><a  href="cpu.html">Computadores</a></li>
+                    <li><a  href="teclados.html">Teclados</a></li>
+                    <li><a  href="monitores.html">Monitores</a></li>
+                    <li><a  href="Mouses.html">Mouses</a></li>
+                    <li id="idvBusca">
+                        <input type="text" class="txBusca" id="txtBusca" placeholder="Buscar..."/>
+                        <button id="btnBusca" onclick="Buscar()">Buscar</button></li>
+                </ul>
+                </nav>
+                <br><br>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">COMPUTADORES</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">TELA RYZEN 5 3500X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/s/t/stryker_amd_c_pv_1__2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$1200.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">COMPUTADOR RYZEN 7 3600X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/p/b/pbs3081_25.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$3890.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">COMPUTADOR RYZEN 9 4000X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/p/a/paladin_intel_1030_1_.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$ 5890.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">COMPUTADOR RYZEN 4 2000X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/d/r/dragoon-amd-gtx_1__3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$1830.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">COMPUTADOR RYZEN 5 3800X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/c/o/combathomerx_11__1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$1900.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">COMPUTADOR RYZEN 9 6000X</span>
+                    <img class="shop-item-image" src="https://media.pichau.com.br/media/catalog/product/cache/cd2e75e2636e632c04e681018268259c/r/a/raiderr1_15.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R$6580.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CARRINHO</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">NOME PRODUTO</span>
+                <span class="cart-price cart-header cart-column">PREÇO</span>
+                <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">R$ 0.00</span>
+            </div>
+            <center>
+                <button class="btn btn-primary btn-purchase" id="reseta" type="button">RESETAR</button>
+            <button class="btn btn-secundary btn-purchase" id="finaliza" onclick="fimCompra()">FINALIZAR COMPRA</button>
+            </center>
+        </section>
+      <br>
+      <br>
+      <hr>
+    </body>
+</html>
